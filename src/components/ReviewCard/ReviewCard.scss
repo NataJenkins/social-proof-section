@@ -1,0 +1,37 @@
+@import "../../_base.scss";
+
+.review-card {
+    box-sizing: border-box;
+    padding: 32px;
+    background-color: $very-ark-agenta;
+    border-radius: 8px;
+    max-width: 350px;
+    min-height: 237px;
+    overflow: hidden;
+    .header {
+        display: flex;
+        align-items: center;
+        img {
+            border-radius: 50%;
+        }
+        .title {
+            font-size: 17px;
+            margin-left: 23px;
+            h2 {
+                color: $white;
+                font-weight: 700;
+            }
+            p {
+                font-weight: 400px;
+                color: $soft-pink;
+            }
+        }
+    }
+    .card-content {
+        margin-top: 32px;
+        color: $white;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 22px;
+    }
+}

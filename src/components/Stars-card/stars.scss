@@ -1,0 +1,27 @@
+@import "../../_base.scss";
+.stars-card-container {
+    height: 56px;
+    width: 445px;
+    background-color: $light-rayish-magenta;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+    box-sizing: border-box;
+    padding: 0 32px;
+    p {
+        color: $very-ark-agenta;
+        font-size: 17px;
+        font-weight: 700;
+        margin-left: 32px;
+    }
+    @media (max-width: 1000px) {
+        flex-direction: column;
+        height: auto;
+        padding: 16px 0px;
+        width: 100%;
+        p {
+            margin-top: 15px;
+        }
+    }
+}

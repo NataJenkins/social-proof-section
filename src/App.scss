@@ -1,0 +1,89 @@
+@import "./_base.scss";
+
+.container {
+    min-width: 100vw;
+    min-height: 100vh;
+    padding: 118px 165px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .content {
+        min-height: auto;
+        max-width: 1110px;
+    }
+    .top {
+        display: flex;
+        justify-content: space-between;
+        .header {
+            width: 50%;
+            h1 {
+                font-size: 56px;
+                font-weight: 700;
+                color: $very-ark-agenta;
+                letter-spacing: -2px;
+                line-height: 48px;
+            }
+            p {
+                margin-top: 16px;
+                color: $dark-rayish-magenta;
+                font-size: 19px;
+                font-weight: 500;
+                line-height: 25px;
+            }
+        }
+        .stars {
+            width: 50%;
+            & > div:last-child {
+                margin-left: auto;
+            }
+            & > div:nth-child(2) {
+                margin: auto;
+            }
+        }
+    }
+    .bottom {
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        & > div:first-child {
+            transform: translate(0, -60px);
+        }
+        & > div:nth-child(2) {
+            transform: translate(0, -30px);
+        }
+    }
+    @media (max-width: 1000px) {
+        padding: 82px 24px;
+        align-items: center;
+        text-align: center;
+        .top {
+            flex-direction: column;
+            .header {
+                width: 100%;
+            }
+            .stars {
+                margin-top: 23px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                & > div:last-child,
+                & > div:nth-child(2) {
+                    margin: 16px 0;
+                }
+            }
+        }
+        .bottom {
+            margin-top: 49px;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            & > div:first-child,
+            & > div:nth-child(2) {
+                transform: none;
+            }
+        }
+    }
+}
