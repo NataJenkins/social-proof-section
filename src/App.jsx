@@ -5,21 +5,21 @@ import ReviewCard from "./components/ReviewCard/ReviewCard";
 function App() {
     const reviews = [
         {
-            img: "./public/images/image-colton.jpg",
+            img: "Colton",
             name: "Colton Smith",
             type: "Verified Buyer",
             content:
                 "“ We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time. Excellent! ”",
         },
         {
-            img: "./public/images/image-irene.jpg",
+            img: "Irene",
             name: "Irene Roberts",
             type: "Verified Buyer",
             content:
                 "“ Customer service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery.”",
         },
         {
-            img: "./public/images/image-anne.jpg",
+            img: "Anne",
             name: "Anne Wallace",
             type: "Verified Buyer",
             content:
